@@ -79,7 +79,8 @@ li {
 a {
   color: #42b983;
 }
-  body{
-    background-color: #f;
-  }
+
+body{
+  background: linear-gradient(70deg, #DCC7AE, #fff);
+}
 </style>

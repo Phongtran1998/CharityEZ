@@ -23,7 +23,7 @@ module.exports = (function () {
         // Set to `true` or `false` to always turn it on or off
         bundleAnalyzerReport: process.env.npm_config_report,
         htmlConfig: {
-          title: 'test',
+          title: 'CharityEZ',
           baiduAnalysis: '11111'
         }
       }
@@ -41,7 +41,7 @@ module.exports = (function () {
         packStats: path.resolve(__dirname, '../pack-stats.json'),
         bundleAnalyzerReport: process.env.npm_config_report,
         htmlConfig: {
-          title: 'test'
+          title: 'CharityEZ'
         }
 
       }
@@ -58,7 +58,7 @@ module.exports = (function () {
         packStats: path.resolve(__dirname, '../pack-stats.json'),
         bundleAnalyzerReport: process.env.npm_config_report,
         htmlConfig: {
-          title: 'test'
+          title: 'CharityEZ'
         }
       }
     default:
