@@ -1,7 +1,7 @@
 {
-  "name": "charityez",
-  "version": "1.0",
-  "description": "Makes donating easier",
+  "name": "Charityeasy",
+  "version": "v0.0.1",
+  "description": "Easy charity",
   "author": "O.Lisovskaya &amp; P.Tran",
   "private": true,
   "scripts": {
