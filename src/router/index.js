@@ -1,7 +1,8 @@
 import store from 'store'
 import Vue from 'vue'
 import Router from 'vue-router'
-import Hello from 'components/Hello'
+import Organizations from 'components/Organizations'
+import Account from 'components/Account'
 import Index from 'views/Index'
 
 Vue.use(Router)
@@ -13,14 +14,14 @@ const routes = [
     component: Index
   },
   {
-    path: '/hello',
-    name: 'Hello',
-    component: Hello
+    path: '/bank-account',
+    name: 'Bank Account',
+    component: Account
   },
   {
-    path: '/user',
-    name: 'User',
-    component: Hello
+    path: '/organizations',
+    name: 'All Organizations',
+    component: Organizations
   }
 ]
 

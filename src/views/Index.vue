@@ -1,10 +1,9 @@
 <template>
+
   <div class="hello">
+    <Nav></Nav>
     <Hello></Hello>
-    <group>
-      <cell title="hello" value="hello" link="hello"></cell>
-      <cell title="user" value="user" link="user"></cell>
-    </group>
+
     <h2>TITLE</h2>
     <x-button type="primary" @click.native="clickToast">点我</x-button>
   </div>
@@ -14,13 +13,19 @@
 // import Api from 'api'
 import { Group, Cell, XButton } from 'vux'
 import Hello from 'components/Hello'
+import Account from 'components/Account'
+import Organizations from 'components/Organizations'
+import Nav from 'components/Nav'
 
 export default {
   components: {
     Group,
     Cell,
     XButton,
-    Hello
+    Hello,
+    Account,
+    Organizations,
+    Nav
   },
   data () {
     return {
@@ -81,6 +86,6 @@ a {
 }
 
 body{
-  background: linear-gradient(70deg, #DCC7AE, #fff);
+  background: linear-gradient(-13deg, #DCC7AE, #fff);
 }
 </style>
