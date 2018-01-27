@@ -79,4 +79,7 @@ li {
 a {
   color: #42b983;
 }
+  body{
+    background-color: #f;
+  }
 </style>
