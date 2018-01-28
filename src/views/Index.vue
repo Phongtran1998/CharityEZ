@@ -4,8 +4,8 @@
     <Nav></Nav>
     <Hello></Hello>
 
-    <h2>TITLE</h2>
-    <x-button type="primary" @click.native="clickToast">点我</x-button>
+    <!--<h2>TITLE</h2>-->
+    <!--<x-button type="primary" @click.native="clickToast">点我</x-button>-->
   </div>
 </template>
 
