@@ -1,5 +1,7 @@
 <template>
-
+<div class="main-wrapper">
+  <h1>List of all organizations</h1>
+</div>
 </template>
 
 <script>
