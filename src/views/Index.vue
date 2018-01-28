@@ -142,6 +142,5 @@ body{
   margin-top: -60px;
   min-height: 100vh;
   background: linear-gradient(-13deg, #DCC7AE, #fff);
-  min-height: 100vh;
 }
 </style>

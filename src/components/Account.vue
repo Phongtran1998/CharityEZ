@@ -1,4 +1,6 @@
 <template>
+  <div class="main">
+    <!--<Nav></Nav>-->
   <div class="main-wrapper">
     <div class="internal-wrap">
       <div class="deep-wrap1">
@@ -7,26 +9,30 @@
         <p>Account Number:</p>
         <p>Routing Numbers:</p>
         <p>Average Spending:</p>
+        <p>Where I donate:</p>
+        <br>
 
       </div>
       <div v-for="" class="deep-wrap1">
         <h2><br><br></h2>
-        <p>1000</p>
-        <p></p>
-        <p></p>
-        <p></p>
+        <p>$1,000</p>
+        <p>6262627</p>
+        <p>9282737181</p>
+        <p>$5,898</p>
+        <p>American Red Cross</p>
+        <p>Save the Children</p>
       </div>
       <div class="deep-wrap2">
         <h2><br><br></h2>
-        <button>Set Up</button>
+        <button class="account-button">Set Up</button>
       </div>
     </div>
     <div class="internal-wrap">
       <h2>Choose the Organizations to donate</h2>
       <h3>Choose the category</h3>
       <select>
-        <option selected>...</option>
-        <option>Education</option>
+        <!--<option selected>...</option>-->
+        <option selected>Education</option>
         <option>Animal</option>
         <option>Environment</option>
         <option>International NGOs</option>
@@ -34,12 +40,20 @@
         <option>Arts and Culture</option>
       </select>
     </div>
+    <!--<Footer></Footer>-->
+  </div>
   </div>
 
 </template>
 
 <script>
+  import Nav from 'components/Nav'
+  import Footer from 'components/Footer'
   export default {
+    components: {
+      Nav,
+      Footer
+    },
     name: 'account',
     data () {
       return {
@@ -79,19 +93,19 @@
 
 /*}*/
    body{
-
+     background: linear-gradient(-13deg, #DCC7AE, #fff);
     min-height: 100vh;
-
   }
   .main-wrapper{
     width: 100%;
     display: flex;
     color: #2B2931;
-
+    padding: 50px 0;
   }
 h2 {
   font-size: 35px;
   font-family: Berkshire Swash;
+  line-height: 36px;
 }
 
 p {
@@ -104,16 +118,19 @@ h3 {
   font-weight: lighter;
 }
 
+  .account-button {
+
+  }
   .internal-wrap:first-child {
     margin-left: 20%;
-    width: 50%;
+    width: 60%;
     display: inline-flex;
     text-align: left;
 
   }
   .internal-wrap:last-child {
     margin-right: 20%;
-    width: 50%;
+    width: 40%;
     display: inline-block;
     text-align: center;
     line-height: 100px;
@@ -128,17 +145,30 @@ h3 {
     margin-left: 30px;
   }
   .deep-wrap2 {
-    width: 33%;
+    width: 23%;
     display: inline-block;
     text-align: left;
+    padding: 0 10px;
   }
   button {
     position: absolute;
     width: 100px;
+    line-height: 35px;
+    font-size: 22px;
+    background-color: #F7892F;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
   }
   select {
-    width: 200px;
-    ;
+    width: 100%;
+    line-height: 35px;
+    /* height: 35px; */
+    font-size: 24px;
+    background-color: #fff;
+    color: #333333;
+    padding: 5px;
   }
 
 
