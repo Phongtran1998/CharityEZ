@@ -65,10 +65,6 @@ export default {
 <style rel="stylesheet/scss">
 h1, h2 {
   font-weight: normal;
-  &:before {
-    content: '';
-    circle: 50px #ff0;
-  }
 }
 
 ul {
