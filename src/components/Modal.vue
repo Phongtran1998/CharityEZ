@@ -1,4 +1,5 @@
 <template>
+  <div>
     <!-- template for the modal component -->
 <script type="text/x-template" id="modal-template">
   <transition name="modal">
@@ -33,7 +34,7 @@
 </script>
 
 <!-- app -->
-<div id="app">
+<!--<div id="app">-->
   <button id="show-modal" @click="showModal = true">Show Modal</button>
   <!-- use the modal component, pass in the prop -->
   <modal v-if="showModal" @close="showModal = false">
@@ -43,7 +44,8 @@
     -->
     <h3 slot="header">custom header</h3>
   </modal>
-</div>
+<!--</div>-->
+  </div>
 </template>
 
 <script>

@@ -21,12 +21,18 @@ export default {
 
 <style scoped>
   .hello {
-    padding: 60px 0;
+    box-sizing: border-box;
+    min-height: 645px;
+    height: calc(100vh - 57px);
+    /*padding-bottom: 90px;*/
+    /*height: calc(100vh - 100px);*/
+    /*min-height: calc(100vh - 142px);*/
+    /*padding: 60px 0;*/
   }
   .hello-btn-container {
     display: inline-block;
     vertical-align: top;
-    margin: 240px 307px 0 0;
+    margin: 285px 307px 0 0;
   }
   .hello-btn {
     position: relative;
@@ -91,5 +97,6 @@ export default {
     vertical-align: bottom;
     width: 380px;
     display: inline-block;
+    margin: 55px 0 0;
   }
 </style>

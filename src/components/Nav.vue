@@ -24,6 +24,10 @@
 </script>
 
 <style scoped>
+  .main-nav {
+    display: block;
+    padding: 25px 0 0;
+  }
   /*@mixin transition {*/
     /*-webkit-transition: all .3s ease-out;*/
     /*-moz-transition: all .3s ease-out;*/
@@ -52,6 +56,10 @@
        -webkit-transition: color 1s ease, text-shadow 1.5s ease; /* Safari */
        transition: color 1s ease, text-shadow 1.5s ease;
      }
+  }
+
+  .nav-link {
+    box-sizing: border-box;
   }
 
   .nav-link, .nav-user {
