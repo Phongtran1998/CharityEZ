@@ -7,8 +7,9 @@
         <p>Account Number:</p>
         <p>Routing Numbers:</p>
         <p>Average Spending:</p>
+
       </div>
-      <div class="deep-wrap1">
+      <div v-for="" class="deep-wrap1">
         <h2><br><br></h2>
         <p>1000</p>
         <p></p>
@@ -32,14 +33,35 @@
         <option>Health</option>
         <option>Arts and Culture</option>
       </select>
-
     </div>
   </div>
+
 </template>
 
 <script>
   export default {
-    name: 'account'
+    name: 'account',
+    data () {
+      return {
+        account: {
+          id: '',
+          name: '',
+          number: '',
+          type: '',
+          updated_at: '',
+          users: [],
+          features: '',
+          routing: ''
+        }
+      }
+    },
+
+    created () {
+      this.$http.get('https://api.demo.narmitech.com/v1/55555').then(function (data) {
+        console.log(data)
+      })
+    }
+
   }
 </script>
 
@@ -56,18 +78,15 @@
   /*text-align: left;*/
 
 /*}*/
-  html body{
-    margin: auto 10px;
-    width: auto;
-    height: 2000px;
-    background-color: linear-gradient(-13deg, #DCC7AE, #fff);
-    background-size: cover;
-    padding: 100%;
+   body{
+
+    min-height: 100vh;
+
   }
   .main-wrapper{
     width: 100%;
     display: flex;
-    color: blue;
+    color: #2B2931;
 
   }
 h2 {
@@ -90,7 +109,7 @@ h3 {
     width: 50%;
     display: inline-flex;
     text-align: left;
-    line-height: 160px;
+
   }
   .internal-wrap:last-child {
     margin-right: 20%;

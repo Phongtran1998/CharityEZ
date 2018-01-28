@@ -4,6 +4,7 @@ import Vue from 'vue'
 import App from './App'
 import store from './store'
 import router from './router'
+import VueResource from 'vue-resource'
 
 import installStyles from './install-styles'
 installStyles()
@@ -25,6 +26,8 @@ Vue.component('modal', {
 })
 
 /* eslint-disable no-new */
+
+Vue.use(VueResource)
 new Vue({
   el: '#app',
   store,

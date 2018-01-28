@@ -83,5 +83,6 @@ a {
 
 body{
   background: linear-gradient(-13deg, #DCC7AE, #fff);
+  min-height: 100vh;
 }
 </style>
