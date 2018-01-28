@@ -64,12 +64,17 @@
   }
 h2 {
   font-size: 35px;
-  font-family: Karla,serif;
+  font-family: Berkshire Swash;
 }
 
 p {
   font-size: 35px;
-  font-family: Sofia;
+  font-family: Cookie;
+}
+h3 {
+  font-family: Cookie;
+  font-size: 40px;
+  font-weight: lighter;
 }
 
   .internal-wrap:first-child {
