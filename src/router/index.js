@@ -15,12 +15,12 @@ const routes = [
   },
   {
     path: '/bank-account',
-    name: 'Bank Account',
+    name: 'bank-account',
     component: Account
   },
   {
     path: '/organizations',
-    name: 'All Organizations',
+    name: 'organizations',
     component: Organizations
   }
 ]
