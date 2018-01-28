@@ -9,14 +9,14 @@
         <p>Average Spending:</p>
       </div>
       <div class="deep-wrap1">
-        <h2><br></h2>
+        <h2><br><br></h2>
         <p>1000</p>
         <p></p>
         <p></p>
         <p></p>
       </div>
       <div class="deep-wrap2">
-        <h2><br></h2>
+        <h2><br><br></h2>
         <button>Set Up</button>
       </div>
     </div>
@@ -56,10 +56,18 @@
   /*text-align: left;*/
 
 /*}*/
-
+  html body{
+    margin: auto 10px;
+    width: auto;
+    height: 2000px;
+    background-color: linear-gradient(-13deg, #DCC7AE, #fff);
+    background-size: cover;
+    padding: 100%;
+  }
   .main-wrapper{
     width: 100%;
     display: flex;
+    color: blue;
 
   }
 h2 {
@@ -78,13 +86,14 @@ h3 {
 }
 
   .internal-wrap:first-child {
-    margin-left: 60px;
+    margin-left: 20%;
     width: 50%;
     display: inline-flex;
     text-align: left;
+    line-height: 160px;
   }
-  .internal-wrap {
-    margin-left: 60px;
+  .internal-wrap:last-child {
+    margin-right: 20%;
     width: 50%;
     display: inline-block;
     text-align: center;
@@ -97,7 +106,7 @@ h3 {
   .deep-wrap1:last-child {
     width: 20%;
     display: inline-block;
-
+    margin-left: 30px;
   }
   .deep-wrap2 {
     width: 33%;
