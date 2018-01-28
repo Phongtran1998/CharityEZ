@@ -19,8 +19,8 @@
         <p>6262627</p>
         <p>9282737181</p>
         <p>$5,898</p>
-        <p>American Red Cross</p>
-        <p>Save the Children</p>
+        <p>American Red Cross <span class="donation">2%</span> <span class="period">yearly</span> </p>
+        <p>Save the Children <span class="donation">$500</span> <span class="period">monthly</span></p>
       </div>
       <div class="deep-wrap2">
         <h2><br><br></h2>
@@ -96,6 +96,13 @@
      background: linear-gradient(-13deg, #DCC7AE, #fff);
     min-height: 100vh;
   }
+
+  .donation, .period {
+    border: 1px solid #666666;
+    background-color: #fff;
+    margin: 0 5px 0 10px;
+    padding: 0 5px;
+  }
   .main-wrapper{
     width: 100%;
     display: flex;
@@ -123,14 +130,14 @@ h3 {
   }
   .internal-wrap:first-child {
     margin-left: 20%;
-    width: 60%;
+    width: 70%;
     display: inline-flex;
     text-align: left;
 
   }
   .internal-wrap:last-child {
     margin-right: 20%;
-    width: 40%;
+    width: 30%;
     display: inline-block;
     text-align: center;
     line-height: 100px;
