@@ -19,10 +19,18 @@ vueExtend(Vue)
 
 Vue.config.productionTip = false
 
+// register modal component
+Vue.component('modal', {
+  template: '#modal-template'
+})
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
   store,
   router,
+  data: {
+    showModal: false
+  },
   render: createElement => createElement(App)
 })
